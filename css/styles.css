@@ -22,8 +22,7 @@ h6 {
   margin: 0;
 }
 
-ul,
-ol {
+ul {
   margin: 0;
   padding: 0;
 }
@@ -158,17 +157,27 @@ body {
 }
 
 /* ----------------- Студія Мейн ----------------- */
-/*--------Hero------ */
+/*----------------Hero-------------- */
 .hero {
   background-color: var(--dark-color);
 }
 
-.title {
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+
+.hero-title {
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
   letter-spacing: var(--text-spacing);
   color: var(--white-color);
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Кнопка */
@@ -179,11 +188,16 @@ body {
   font-size: var(--text-size);
   line-height: var(--typical-lh);
   letter-spacing: 0.04em;
+  border-radius: 4px;
+  padding: 16px 32px;
+  margin-top: 48px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .title-btn:is(:hover, :focus) {
   background: var(--active-color);
 }
-/*--------Features------ */
+/*----------------Features-------------- */
 .features {
 }
 
