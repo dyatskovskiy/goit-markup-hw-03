@@ -33,6 +33,20 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.btn {
+  font-family: inherit;
+  cursor: pointer;
+}
+
 /* ------------Cкидання стилів------------ */
 
 /* Приховати елемент */
@@ -64,16 +78,28 @@ body {
   margin: 0 auto;
   outline: 2px solid red;
 }
-.list {
-  list-style: none;
-}
-.link {
-  text-decoration: none;
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
-.btn {
-  font-family: inherit;
-  cursor: pointer;
+/* *****************Студія******************** */
+/* ----------------- Хедер ----------------- */
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+  display: flex;
+}
+
+/* Лого  */
+.header-logo-span {
+  color: var(--dark-color);
 }
 
 .logo {
@@ -85,22 +111,6 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-right: 76px;
-}
-
-/* *****************Студія******************** */
-/* ----------------- Хедер ----------------- */
-
-.header {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid #e7e9fc;
-}
-.header-container {
-  display: flex;
-}
-/* Лого  */
-.header-logo-span {
-  color: var(--dark-color);
 }
 
 /* Навігація */
@@ -198,6 +208,7 @@ body {
 }
 /*--------What are we doing------ */
 .gallery {
+  padding-top: 0;
 }
 
 .gallery-caption {
@@ -271,6 +282,9 @@ body {
 }
 
 /*******************Портфоліо***************** */
+.projects {
+  padding-top: 96px;
+}
 /*--------Фільтр------ */
 
 .filters-list {
