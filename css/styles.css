@@ -197,6 +197,7 @@ body {
 .title-btn:is(:hover, :focus) {
   background: var(--active-color);
 }
+
 /*----------------Features-------------- */
 .features {
 }
@@ -223,6 +224,7 @@ body {
   line-height: var(--typical-lh);
   letter-spacing: var(--text-spacing);
 }
+
 /*--------What are we doing------ */
 .gallery {
   padding-top: 0;
@@ -235,9 +237,12 @@ body {
   letter-spacing: var(--text-spacing);
   text-transform: capitalize;
   color: var(--dark-color);
+  margin-bottom: 72px;
 }
 
 .gallery-list {
+  display: flex;
+  gap: 24px;
 }
 
 .gallery-list-item {
