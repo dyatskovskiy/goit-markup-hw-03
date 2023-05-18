@@ -255,6 +255,8 @@ body {
 /* ----------------- Футер ----------------- */
 .footer {
   background-color: var(--dark-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .footer-logo-span {
   color: var(--light-color);
@@ -264,6 +266,8 @@ body {
   line-height: var(--typical-lh);
   letter-spacing: var(--text-spacing);
   color: var(--light-color);
+  margin-top: 16px;
+  max-width: 264px;
 }
 
 /*******************Портфоліо***************** */
