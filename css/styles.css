@@ -2,8 +2,10 @@
   /* Кольори */
   --dark-color: #2e2f42;
   --text-color: #434455;
+  --subtle-text-color: #8e8f99;
   --white-color: #ffffff;
   --light-color: #f4f4fd;
+  --accent-color: #e7e9fc;
   --passive-color: #4d5ae5;
   --active-color: #404bbf;
   /* Текст */
@@ -32,7 +34,6 @@ ul {
 img {
   display: block;
   max-width: 100%;
-  height: auto;
 }
 
 .list {
@@ -77,7 +78,6 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  /* outline: 2px solid red; */
 }
 
 .section {
@@ -92,7 +92,7 @@ body {
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
-  border-bottom: 1px solid #e7e9fc;
+  border-bottom: 1px solid var(--accent-color);
 }
 
 .header-container {
@@ -326,9 +326,13 @@ body {
 .projects {
   padding-top: 96px;
 }
-/*--------Фільтр------ */
 
+/*--------Фільтр------ */
 .filters-list {
+  display: flex;
+  gap: var(--typical-gap);
+  justify-content: center;
+  margin-bottom: 72px;
 }
 
 .filters-btn {
@@ -340,6 +344,10 @@ body {
   letter-spacing: 0.04em;
   color: var(--passive-color);
   background-color: var(--light-color);
+
+  padding: 12px 24px;
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
 }
 
 .filters-btn:is(:hover, :focus) {
@@ -348,15 +356,40 @@ body {
 }
 
 /*--------Картка проекту------ */
-.projects-title {
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -48px;
+  margin-left: -24px;
+}
+
+.card-item {
+  flex-basis: calc(100% / 3 - 26px);
+  margin-top: 48px;
+  margin-left: 24px;
+  background: var(--white-color);
+  border: 1px solid var(--accent-color);
+}
+.card-item * {
+}
+
+.card-link {
+}
+
+.card-content {
+  padding: 32px 0 32px 16px;
+}
+
+.card-caption {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: var(--text-spacing);
   color: var(--dark-color);
+  margin-bottom: 8px;
 }
 
-.projects-text {
+.card-text {
   font-size: var(--text-size);
   line-height: var(--typical-lh);
   letter-spacing: var(--text-spacing);
