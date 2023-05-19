@@ -74,7 +74,7 @@ body {
 }
 
 .container {
-  max-width: 1128px;
+  width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -118,6 +118,7 @@ body {
 /* Навігація */
 .navigation {
   display: flex;
+  align-items: center;
 }
 
 .nav-list {
@@ -131,6 +132,7 @@ body {
   font-size: var(--text-size);
   line-height: var(--typical-lh);
   letter-spacing: var(--text-spacing);
+  padding: 24px 0;
 }
 
 .nav-list-link:is(:hover, :focus) {
@@ -163,13 +165,12 @@ body {
 /*----------------Hero-------------- */
 .hero {
   background-color: var(--dark-color);
+  padding: 188px 0;
 }
 
 .hero-container {
   display: flex;
   flex-direction: column;
-  padding-top: 188px;
-  padding-bottom: 188px;
 }
 
 .hero-title {
@@ -191,8 +192,10 @@ body {
   font-size: var(--text-size);
   line-height: var(--typical-lh);
   letter-spacing: 0.04em;
+  border: none;
   border-radius: 4px;
-  padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
   margin-top: 48px;
   margin-left: auto;
   margin-right: auto;
@@ -211,6 +214,7 @@ body {
 }
 
 .features-list-item {
+  flex-basis: calc((100% -24px * 3) / 4);
 }
 
 .features-list-title {
@@ -228,7 +232,7 @@ body {
   letter-spacing: var(--text-spacing);
 }
 
-/*--------What are we doing------ */
+/*--------Секція зображень: чим ми займаємось------ */
 .gallery {
   padding-top: 0;
 }
@@ -253,7 +257,7 @@ body {
   flex-basis: calc((100% - 48px) / 3);
 }
 
-/*-------- Our Team------ */
+/*-------- Секція з фото команди------ */
 .team-gallery {
   background-color: var(--light-color);
 }
@@ -277,11 +281,11 @@ body {
 .team-list-item {
   background-color: var(--white-color);
   flex-basis: calc((100% - 72px) / 4);
+  border-radius: 0 0 4px 4px;
 }
 
 .team-card-text-wrapper {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 32px 16px;
 }
 
 .team-list-caption {
@@ -309,15 +313,21 @@ body {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+
+.logo-footer-link {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
 .footer-logo-span {
   color: var(--light-color);
 }
+
 .footer-text {
   font-size: var(--text-size);
   line-height: var(--typical-lh);
   letter-spacing: var(--text-spacing);
   color: var(--light-color);
-  margin-top: 16px;
   max-width: 264px;
 }
 
@@ -353,31 +363,28 @@ body {
 .filters-btn:is(:hover, :focus) {
   color: var(--white-color);
   background-color: var(--active-color);
+  border: 1px solid transparent;
 }
 
-/*--------Картка проекту------ */
+/*--------Картки проектів------ */
 .card-set {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -48px;
-  margin-left: -24px;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 
 .card-item {
-  flex-basis: calc(100% / 3 - 26px);
-  margin-top: 48px;
-  margin-left: 24px;
   background: var(--white-color);
-  border: 1px solid var(--accent-color);
-}
-.card-item * {
+  flex-basis: calc((100% - 24px * 2) / 3);
 }
 
 .card-link {
 }
 
 .card-content {
-  padding: 32px 0 32px 16px;
+  padding: 32px 16px;
+  border: 1px solid var(--accent-color);
 }
 
 .card-caption {
