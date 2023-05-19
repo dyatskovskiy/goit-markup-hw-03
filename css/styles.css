@@ -385,6 +385,7 @@ body {
 .card-content {
   padding: 32px 16px;
   border: 1px solid var(--accent-color);
+  border-top: none;
 }
 
 .card-caption {
