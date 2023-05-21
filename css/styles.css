@@ -314,9 +314,10 @@ body {
   padding-bottom: 100px;
 }
 
-.logo-footer-link {
+.footer-logo-link {
   display: inline-block;
   margin-bottom: 16px;
+  margin-right: 0;
 }
 
 .footer-logo-span {
@@ -353,7 +354,7 @@ body {
   text-align: center;
   letter-spacing: 0.04em;
   color: var(--passive-color);
-  background-color: var(--light-color);
+  background: var(--light-color);
 
   padding: 12px 24px;
   border: 1px solid var(--accent-color);
@@ -362,7 +363,7 @@ body {
 
 .filters-btn:is(:hover, :focus) {
   color: var(--white-color);
-  background-color: var(--active-color);
+  background: var(--active-color);
   border: 1px solid transparent;
 }
 
