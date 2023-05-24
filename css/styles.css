@@ -171,6 +171,7 @@ body {
 .hero-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .hero-title {
@@ -180,8 +181,6 @@ body {
   letter-spacing: var(--text-spacing);
   color: var(--white-color);
   max-width: 496px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* Кнопка */
@@ -197,8 +196,6 @@ body {
   min-width: 169px;
   height: 56px;
   margin-top: 48px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .title-btn:is(:hover, :focus) {
   background: var(--active-color);
